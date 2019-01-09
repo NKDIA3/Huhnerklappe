@@ -18,10 +18,8 @@ RTC_DS1307 rtc;
 
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; //Variable für Anzeige des Wochentags
 
-
-
 int sensorValue = 0;                                              //Sensor Wert (Standard =)
-
+int State = 0;
 #define M1 D5                                                      //Motorsteuerung Pin 1
 #define M2 D6                                                      //Motorsteuerung Pin 2
 #define LDR A0                                                     //Fotottransistor am ADC (Pin A0)
@@ -45,31 +43,68 @@ void setup() {                                                    //Code läuft 
     Serial.println("Setze Zeit...");                              
     rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));               //Falls keine Zeit in der RTC gesetz war wird die Zeit des Kompilierens gesetzt
   }
-  int start = digitalRead(T1);                                    //Status Tür einlesen
-  if ( start == HIGH ){                                              //Wenn offen runter fahren bis geschlossen 
+             
+  if ( digitalRead(T1) == HIGH ){                                              //Wenn offen runter fahren bis geschlossen 
     Serial.println("Tür offen --> kalibrierung");
-    while( start == HIGH ){
+    while( digitalRead(T1) == HIGH ){
       runter();
       delay(100);
       Serial.println("Fahre runter");
-      start = digitalRead(T1);
     }
     aus();
+    State=0;
     Serial.println("Kalibriert");
+    
+    DateTime now = rtc.now();
+    Serial.print(now.year(), DEC);
+    Serial.print('/');
+    Serial.print(now.month(), DEC);
+    Serial.print('/');
+    Serial.print(now.day(), DEC);
+    Serial.print(" (");
+    Serial.print(daysOfTheWeek[now.dayOfTheWeek()]);
+    Serial.print(") ");
+    Serial.print(now.hour(), DEC);
+    Serial.print(':');
+    Serial.print(now.minute(), DEC);
+    Serial.print(':');
+    Serial.print(now.second(), DEC);
+    Serial.println();
+    
   }  
 }
 
 void loop() {
+  DateTime now = rtc.now();
+  int std = now.hour();
   sensorValue = analogRead(A0);                                   //Einlesen des ADC 0....1024
+ 
+  if((State == 0 )&& (sensorValue >= 101) && (std >= 5 ) && (std <= 18 )) {  
+    hoch();
+    delay(5000);
+    aus();
+    Serial.println("oben");
+    State=1;
+  }
 
+  if((State == 1 )&& (sensorValue <= 101) && (std <= 4 ) && (std >= 19 )) {  
+    while( digitalRead(T1) == HIGH ){
+      runter();
+      delay(100);
+      Serial.println("Fahre runter");
+    }
+    aus(); 
+    Serial.println("unten");
+    State=0;
+  }
 }
 
-void runter(){                                                    //Unterprogramm runter 
+void hoch(){                                                    //Unterprogramm runter 
   digitalWrite(M1, HIGH);                                         //Beschaltung siehe Datasheet LS293DD
   digitalWrite(M2, LOW);
 }
 
-void hoch(){
+void runter(){
   digitalWrite(M1, LOW);                                         //Beschaltung siehe Datasheet LS293DD
   digitalWrite(M2, HIGH);
 }
