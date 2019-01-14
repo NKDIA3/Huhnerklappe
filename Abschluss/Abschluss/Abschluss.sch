@@ -180,20 +180,18 @@ Wire Wire Line
 	3900 5900 4000 5900
 Wire Wire Line
 	2900 5900 3500 5900
-Wire Wire Line
-	2900 6800 3100 6800
 $Comp
 L Device:R R2
 U 1 1 5C05698A
-P 3250 6800
-F 0 "R2" V 3150 6800 50  0000 C CNN
-F 1 "10K" V 3250 6800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3180 6800 50  0001 C CNN
-F 3 "~" H 3250 6800 50  0001 C CNN
-	1    3250 6800
+P 3300 6800
+F 0 "R2" V 3200 6800 50  0000 C CNN
+F 1 "10K" V 3300 6800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 6800 50  0001 C CNN
+F 3 "~" H 3300 6800 50  0001 C CNN
+	1    3300 6800
 	0    1    1    0   
 $EndComp
-Text GLabel 3400 6800 2    50   Input ~ 0
+Text GLabel 3450 6800 2    50   Input ~ 0
 GND
 $Comp
 L Switch:SW_Push SW1
@@ -679,4 +677,6 @@ Text Notes 7900 1250 0    50   ~ 0
 Bug 9 nicht Nutzbar\n
 Text Notes 7900 1450 0    50   ~ 0
 Bug 10 nicht nutzbar\n
+Wire Wire Line
+	2900 6800 3150 6800
 $EndSCHEMATC
