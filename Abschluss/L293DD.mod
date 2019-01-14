@@ -1,0 +1,285 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SO20
+$EndINDEX
+$MODULE SO20
+Po 0 0 0 15 00000000 00000000 ~~
+Li SO20
+Cd <b>SMALL OUTLINE INTEGRATED CIRCUIT</b><p>wide body 7.5 mm/JEDEC MS-013AC
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -3.17985 -1.90791 1.00153 1.00153 0 0.05 N V 21 "SO20"
+T1 -2.54091 1.90568 1.00035 1.00035 0 0.05 N V 21 "VAL**"
+DS 6.46 3.7 -6.46 3.7 0.2032 24
+DS -6.46 3.7 -6.46 3.2 0.2032 24
+DS -6.46 3.2 -6.46 -3.7 0.2032 24
+DS -6.46 -3.7 6.46 -3.7 0.2032 24
+DS 6.46 3.2 -6.46 3.2 0.2032 24
+DS 6.46 -3.7 6.46 3.2 0.2032 24
+DS 6.46 3.2 6.46 3.7 0.2032 24
+DP 0 0 0 0 4 0 24
+Dl -5.96271 3.8001
+Dl -5.4699 3.8001
+Dl -5.4699 5.32233
+Dl -5.96271 5.32233
+DP 0 0 0 0 4 0 24
+Dl -4.69669 3.8001
+Dl -4.1999 3.8001
+Dl -4.1999 5.32747
+Dl -4.69669 5.32747
+DP 0 0 0 0 4 0 24
+Dl -3.42225 3.8001
+Dl -2.9299 3.8001
+Dl -2.9299 5.32335
+Dl -3.42225 5.32335
+DP 0 0 0 0 4 0 24
+Dl -2.15043 3.8001
+Dl -1.6599 3.8001
+Dl -1.6599 5.32081
+Dl -2.15043 5.32081
+DP 0 0 0 0 4 0 24
+Dl -0.880906 3.8001
+Dl -0.3899 3.8001
+Dl -0.3899 5.32487
+Dl -0.880906 5.32487
+DP 0 0 0 0 4 0 24
+Dl 0.39032 3.8001
+Dl 0.8801 3.8001
+Dl 0.8801 5.32573
+Dl 0.39032 5.32573
+DP 0 0 0 0 4 0 24
+Dl 1.66091 3.8001
+Dl 2.1501 3.8001
+Dl 2.1501 5.32323
+Dl 1.66091 5.32323
+DP 0 0 0 0 4 0 24
+Dl 2.93478 3.8001
+Dl 3.4201 3.8001
+Dl 3.4201 5.32886
+Dl 2.93478 5.32886
+DP 0 0 0 0 4 0 24
+Dl 4.205 3.8001
+Dl 4.6901 3.8001
+Dl 4.6901 5.32646
+Dl 4.205 5.32646
+DP 0 0 0 0 4 0 24
+Dl 5.47116 3.8001
+Dl 5.9601 3.8001
+Dl 5.9601 5.32123
+Dl 5.47116 5.32123
+DP 0 0 0 0 4 0 24
+Dl 5.47943 -5.32
+Dl 5.9601 -5.32
+Dl 5.9601 -3.80672
+Dl 5.47943 -3.80672
+DP 0 0 0 0 4 0 24
+Dl 4.20373 -5.32
+Dl 4.6901 -5.32
+Dl 4.6901 -3.80356
+Dl 4.20373 -3.80356
+DP 0 0 0 0 4 0 24
+Dl 2.93218 -5.32
+Dl 3.4201 -5.32
+Dl 3.4201 -3.80305
+Dl 2.93218 -3.80305
+DP 0 0 0 0 4 0 24
+Dl 1.6622 -5.32
+Dl 2.1501 -5.32
+Dl 2.1501 -3.80536
+Dl 1.6622 -3.80536
+DP 0 0 0 0 4 0 24
+Dl 0.390663 -5.32
+Dl 0.8801 -5.32
+Dl 0.8801 -3.80753
+Dl 0.390663 -3.80753
+DP 0 0 0 0 4 0 24
+Dl -0.881461 -5.32
+Dl -0.3899 -5.32
+Dl -0.3899 -3.80598
+Dl -0.881461 -3.80598
+DP 0 0 0 0 4 0 24
+Dl -2.15272 -5.32
+Dl -1.6599 -5.32
+Dl -1.6599 -3.80472
+Dl -2.15272 -3.80472
+DP 0 0 0 0 4 0 24
+Dl -3.42487 -5.32
+Dl -2.9299 -5.32
+Dl -2.9299 -3.8054
+Dl -3.42487 -3.8054
+DP 0 0 0 0 4 0 24
+Dl -4.69304 -5.32
+Dl -4.1999 -5.32
+Dl -4.1999 -3.80248
+Dl -4.69304 -3.80248
+DP 0 0 0 0 4 0 24
+Dl -5.96876 -5.32
+Dl -5.4699 -5.32
+Dl -5.4699 -3.80562
+Dl -5.96876 -3.80562
+$PAD
+Sh "2" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.445 4.6
+$EndPAD
+$PAD
+Sh "13" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 3.175 -4.6
+$EndPAD
+$PAD
+Sh "1" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -5.715 4.6
+$EndPAD
+$PAD
+Sh "3" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -3.175 4.6
+$EndPAD
+$PAD
+Sh "4" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.905 4.6
+$EndPAD
+$PAD
+Sh "14" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.905 -4.6
+$EndPAD
+$PAD
+Sh "12" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.445 -4.6
+$EndPAD
+$PAD
+Sh "11" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 5.715 -4.6
+$EndPAD
+$PAD
+Sh "6" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.635 4.6
+$EndPAD
+$PAD
+Sh "9" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.445 4.6
+$EndPAD
+$PAD
+Sh "5" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -0.635 4.6
+$EndPAD
+$PAD
+Sh "7" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.905 4.6
+$EndPAD
+$PAD
+Sh "10" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 5.715 4.6
+$EndPAD
+$PAD
+Sh "8" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 3.175 4.6
+$EndPAD
+$PAD
+Sh "15" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.635 -4.6
+$EndPAD
+$PAD
+Sh "16" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -0.635 -4.6
+$EndPAD
+$PAD
+Sh "17" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.905 -4.6
+$EndPAD
+$PAD
+Sh "18" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -3.175 -4.6
+$EndPAD
+$PAD
+Sh "19" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.445 -4.6
+$EndPAD
+$PAD
+Sh "20" R 0.6 2.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -5.715 -4.6
+$EndPAD
+$EndMODULE SO20

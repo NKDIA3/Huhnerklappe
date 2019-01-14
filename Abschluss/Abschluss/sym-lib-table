@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Abschluss-rescue)(type Legacy)(uri ${KIPRJMOD}/Abschluss-rescue.lib)(options "")(descr ""))
+)

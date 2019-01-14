@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CR2032MFR_RV
+D Coin Cell Battery 3V 3-PIN VERT 225mAh 20.0 X 3.2mm
+K
+F https://componentsearchengine.com/Datasheets/1/CR2032MFR RV.pdf
+$ENDCMP
+#
+#End Doc Library

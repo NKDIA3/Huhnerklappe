@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Vidit/Documents/Schule/Binary clock 1.sch</source>
+    <date>15.02.2018 09:13:18</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Binary clock 1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>ARDUINO_MICRO_SHIELD</value>
+      <footprint>arduino_micro_shield:ARDUINO_MICRO_SHIELD</footprint>
+      <libsource lib="arduino_micro_shield" part="ARDUINO_MICRO_SHIELD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7865FE</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>DS1307</value>
+      <footprint>DS1307:SO08</footprint>
+      <datasheet>2.56 USD</datasheet>
+      <fields>
+        <field name="Feld4">DIP-8 Maxim Integrated</field>
+        <field name="Feld5">IC RTC CLK/CALENDAR I2C 8-DIP</field>
+        <field name="Feld6">Maxim Integrated</field>
+        <field name="Feld7">DS1307</field>
+        <field name="Feld8">Unavailable</field>
+      </fields>
+      <libsource lib="DS1307" part="DS1307"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A786A83</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MS1V-T1K_32.768kHz_7pF_+-20ppm</value>
+      <footprint>MS1V-T1K_32.768kHz_7pF_+-20ppm:MS1V-T1K32</footprint>
+      <datasheet>http://www.microcrystal.com/images/_PDF/2_Crystal_Metal-Package/ms1v-t1k.pdf</datasheet>
+      <fields>
+        <field name="Description">Crystal SMD 32.768KHz 2x6mm Crystal 32.768kHz,  /-20ppm, 2-Pin SMD, 6 x 2 x 2mm</field>
+        <field name="Manufacturer_Name">MICRO CRYSTAL</field>
+        <field name="Manufacturer_Part_Number">MS1V-T1K 32.768kHz 7pF +-20ppm</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">6727593P</field>
+      </fields>
+      <libsource lib="MS1V-T1K_32.768kHz_7pF_+-20ppm" part="MS1V-T1K_32.768kHz_7pF_+-20ppm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A843DE4</tstamp>
+    </comp>
+    <comp ref="BAT1">
+      <value>S8411-45R</value>
+      <footprint>S8411-45R:S8411-45R</footprint>
+      <datasheet>https://cdn.harwin.com/pdfs/S8411R.pdf</datasheet>
+      <fields>
+        <field name="Description">HARWIN - S8411-45R - HOLDER, COIN CELL, CR1220, FULL REEL</field>
+        <field name="Manufacturer_Name">HARWIN</field>
+        <field name="Manufacturer_Part_Number">S8411-45R</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">1613609</field>
+      </fields>
+      <libsource lib="S8411-45R" part="S8411-45R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8440EE</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>2K2</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8443D9</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>2K2</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A844469</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A844F12</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A844FED</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84507A</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84518B</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8451DA</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED_RED</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845241</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8452A2</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84530D</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845384</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845440</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84599F</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A8459E6</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845A6D</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845B01</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845B86</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A845BE5</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84BCE6</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84C215</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84C295</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84C30A</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84C373</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CB31</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CBA6</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CC0B</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CC76</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CCD1</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84CD58</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84D858</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84D8CB</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84D93C</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84D9BB</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A84DA3E</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>LED_BLUE</value>
+      <libsource lib="device" part="LED_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A858ED4</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>R120</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A858F51</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="arduino_micro_shield" part="ARDUINO_MICRO_SHIELD">
+      <description>Arduino Micro shield</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ARDUINO_MICRO_SHIELD</field>
+      </fields>
+      <pins>
+        <pin num="2" name="2/SDA" type="BiDi"/>
+        <pin num="3" name="3(PWM)/SCL" type="BiDi"/>
+        <pin num="4" name="4/A6" type="BiDi"/>
+        <pin num="5" name="5(PWM)" type="BiDi"/>
+        <pin num="5V" name="+5V" type="power_in"/>
+        <pin num="6" name="6(PWM)/A7" type="BiDi"/>
+        <pin num="7" name="7" type="BiDi"/>
+        <pin num="8" name="8/A8" type="BiDi"/>
+        <pin num="9" name="9(PWM)/A9" type="BiDi"/>
+        <pin num="10" name="10(PWM)/A10" type="BiDi"/>
+        <pin num="11" name="11(PWM)" type="BiDi"/>
+        <pin num="12" name="12/A11" type="BiDi"/>
+        <pin num="13" name="13(PWM)" type="BiDi"/>
+        <pin num="3.3V" name="3.3V" type="power_in"/>
+        <pin num="A0" name="A0" type="BiDi"/>
+        <pin num="A1" name="A1" type="BiDi"/>
+        <pin num="A2" name="A2" type="BiDi"/>
+        <pin num="A3" name="A3" type="BiDi"/>
+        <pin num="A4" name="A4" type="BiDi"/>
+        <pin num="A5" name="A5" type="BiDi"/>
+        <pin num="AREF" name="AREF" type="power_in"/>
+        <pin num="GND" name="GND" type="power_in"/>
+        <pin num="MI" name="MISO" type="BiDi"/>
+        <pin num="MO" name="MOSI" type="BiDi"/>
+        <pin num="NC" name="~" type="NotConnected"/>
+        <pin num="RST" name="RESET" type="BiDi"/>
+        <pin num="RX" name="0/RX" type="BiDi"/>
+        <pin num="SCK" name="SCK" type="BiDi"/>
+        <pin num="SS" name="RX_LED/SS" type="BiDi"/>
+        <pin num="TX" name="1/TX" type="BiDi"/>
+        <pin num="VI" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="DS1307" part="DS1307">
+      <footprints>
+        <fp>SO08</fp>
+        <fp>SO08-TIGHT</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS1307</field>
+        <field name="Datasheet">2.56 USD</field>
+        <field name="Field4">DIP-8 Maxim Integrated</field>
+        <field name="Field5">IC RTC CLK/CALENDAR I2C 8-DIP</field>
+        <field name="Field6">Maxim Integrated</field>
+        <field name="Field7">DS1307</field>
+        <field name="Field8">Unavailable</field>
+      </fields>
+      <pins>
+        <pin num="1" name="X1" type="BiDi"/>
+        <pin num="2" name="X2" type="BiDi"/>
+        <pin num="3" name="VBATT" type="BiDi"/>
+        <pin num="4" name="GND" type="BiDi"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="SCL" type="BiDi"/>
+        <pin num="7" name="SQW" type="BiDi"/>
+        <pin num="8" name="VCC" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED_ALT">
+      <description>LED generic, alternativ symbol</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MS1V-T1K_32.768kHz_7pF_+-20ppm" part="MS1V-T1K_32.768kHz_7pF_+-20ppm">
+      <description>Crystal SMD 32.768KHz 2x6mm Crystal 32.768kHz,  /-20ppm, 2-Pin SMD, 6 x 2 x 2mm</description>
+      <docs>http://www.microcrystal.com/images/_PDF/2_Crystal_Metal-Package/ms1v-t1k.pdf</docs>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">MS1V-T1K_32.768kHz_7pF_+-20ppm</field>
+        <field name="Footprint">MS1V-T1K32</field>
+        <field name="Datasheet">http://www.microcrystal.com/images/_PDF/2_Crystal_Metal-Package/ms1v-t1k.pdf</field>
+        <field name="Description">Crystal SMD 32.768KHz 2x6mm Crystal 32.768kHz,  /-20ppm, 2-Pin SMD, 6 x 2 x 2mm</field>
+        <field name="Manufacturer_Name">MICRO CRYSTAL</field>
+        <field name="Manufacturer_Part_Number">MS1V-T1K 32.768kHz 7pF +-20ppm</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">6727593P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S8411-45R" part="S8411-45R">
+      <description>HARWIN - S8411-45R - HOLDER, COIN CELL, CR1220, FULL REEL</description>
+      <docs>https://cdn.harwin.com/pdfs/S8411R.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">S8411-45R</field>
+        <field name="Footprint">S8411-45R</field>
+        <field name="Datasheet">https://cdn.harwin.com/pdfs/S8411R.pdf</field>
+        <field name="Description">HARWIN - S8411-45R - HOLDER, COIN CELL, CR1220, FULL REEL</field>
+        <field name="Manufacturer_Name">HARWIN</field>
+        <field name="Manufacturer_Part_Number">S8411-45R</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">1613609</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+(1)" type="BiDi"/>
+        <pin num="2" name="+(2)" type="BiDi"/>
+        <pin num="3" name="-(1)" type="BiDi"/>
+        <pin num="4" name="-(2)" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="MS1V-T1K_32.768kHz_7pF_+-20ppm">
+      <uri>C:\Users\Vidit\Desktop\arduino_micro_shield-master\MS1V-T1K_32.768kHz_7pF_+-20ppm.lib</uri>
+    </library>
+    <library logical="arduino_micro_shield">
+      <uri>C:\Users\Vidit\Desktop\arduino_micro_shield-master\arduino_micro_shield.lib</uri>
+    </library>
+    <library logical="DS1307">
+      <uri>C:\Users\Vidit\Desktop\arduino_micro_shield-master\DS1307.lib</uri>
+    </library>
+    <library logical="S8411-45R">
+      <uri>C:\Users\Vidit\Desktop\arduino_micro_shield-master\S8411-45R.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D16-Pad2)">
+      <node ref="D16" pin="2"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="2" name="Net-(D8-Pad2)">
+      <node ref="R10" pin="1"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="3" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D6-Pad2)">
+      <node ref="R8" pin="1"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="5" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="7" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="8" name="Net-(D2-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="9" name="Net-(D1-Pad2)">
+      <node ref="R3" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="10" name="Net-(D9-Pad2)">
+      <node ref="R11" pin="1"/>
+      <node ref="D9" pin="2"/>
+    </net>
+    <net code="11" name="Net-(R17-Pad2)">
+      <node ref="U1" pin="A0"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="12" name="Net-(D15-Pad2)">
+      <node ref="D15" pin="2"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="13" name="Net-(R16-Pad2)">
+      <node ref="U1" pin="A1"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D14-Pad2)">
+      <node ref="D14" pin="2"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="15" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="16" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="U1" pin="A3"/>
+    </net>
+    <net code="17" name="Net-(D12-Pad2)">
+      <node ref="R14" pin="1"/>
+      <node ref="D12" pin="2"/>
+    </net>
+    <net code="18" name="Net-(R18-Pad2)">
+      <node ref="U1" pin="13"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="19" name="Net-(R15-Pad2)">
+      <node ref="R15" pin="2"/>
+      <node ref="U1" pin="A2"/>
+    </net>
+    <net code="20" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2"/>
+      <node ref="U1" pin="A4"/>
+    </net>
+    <net code="21" name="Net-(D11-Pad2)">
+      <node ref="D11" pin="2"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D10-Pad2)">
+      <node ref="D10" pin="2"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="23" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="24" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="U1" pin="TX"/>
+    </net>
+    <net code="25" name="Net-(R10-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="26" name="Net-(R9-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="27" name="Net-(R8-Pad2)">
+      <node ref="U1" pin="6"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="28" name="Net-(R7-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="29" name="Net-(R6-Pad2)">
+      <node ref="U1" pin="8"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="30" name="Net-(R5-Pad2)">
+      <node ref="U1" pin="9"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R3-Pad2)">
+      <node ref="U1" pin="11"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D17-Pad2)">
+      <node ref="D17" pin="2"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="33" name="Net-(U1-PadSS)">
+      <node ref="U1" pin="SS"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad3.3V)">
+      <node ref="U1" pin="3.3V"/>
+    </net>
+    <net code="35" name="Net-(U1-PadAREF)">
+      <node ref="U1" pin="AREF"/>
+    </net>
+    <net code="37" name="Net-(U1-PadVI)">
+      <node ref="U1" pin="VI"/>
+    </net>
+    <net code="38" name="Net-(U1-PadMI)">
+      <node ref="U1" pin="MI"/>
+    </net>
+    <net code="39" name="Net-(U1-PadSCK)">
+      <node ref="U1" pin="SCK"/>
+    </net>
+    <net code="40" name="Net-(U1-PadRST)">
+      <node ref="U1" pin="RST"/>
+    </net>
+    <net code="41" name="Net-(U1-PadRX)">
+      <node ref="U1" pin="RX"/>
+    </net>
+    <net code="42" name="Net-(U1-PadMO)">
+      <node ref="U1" pin="MO"/>
+    </net>
+    <net code="43" name="Net-(R19-Pad2)">
+      <node ref="U1" pin="12"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="44" name="Net-(R12-Pad2)">
+      <node ref="U1" pin="A5"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="45" name="Net-(D1-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="D14" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D12" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="D10" pin="1"/>
+      <node ref="D17" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="D15" pin="1"/>
+    </net>
+    <net code="46" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="47" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="48" name="Net-(BAT1-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="BAT1" pin="1"/>
+      <node ref="BAT1" pin="2"/>
+    </net>
+    <net code="50" name="Net-(R1-Pad2)">
+      <node ref="U1" pin="3"/>
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="51" name="Net-(BAT1-Pad3)">
+      <node ref="BAT1" pin="4"/>
+      <node ref="U1" pin="GND"/>
+      <node ref="BAT1" pin="3"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="52" name="Net-(Q1-Pad1)">
+      <node ref="U2" pin="2"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="53" name="Net-(R1-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="5V"/>
+    </net>
+    <net code="54" name="Net-(U1-PadNC)">
+      <node ref="U1" pin="NC"/>
+    </net>
+    <net code="55" name="Net-(R2-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="R2" pin="2"/>
+    </net>
+  </nets>
+</export>

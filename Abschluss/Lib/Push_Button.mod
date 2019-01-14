@@ -1,0 +1,48 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+434111025826
+$EndINDEX
+$MODULE 434111025826
+Po 0 0 0 15 00000000 00000000 ~~
+Li 434111025826
+Cd WS-TRS-6x3.8 mm SMD Tact Switch, 2 pins
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.454012 -3.46744 1.00091 1.00091 0 0.05 N V 21 "434111025826"
+T1 -0.178625 3.27275 1.0001 1.0001 0 0.05 N V 21 "VAL**"
+DS -3 1.9 3 1.9 0.127 21
+DS 3 1.9 3 -1.9 0.127 24
+DS 3 -1.9 -3 -1.9 0.127 21
+DS -3 -1.9 -3 1.9 0.127 24
+T2 -1.600910 0.500284 1 1 0 .05 N V 51 "1"
+DS -3 -0.9 -3 -1.9 0.127 21
+DS 3 -0.9 3 -1.9 0.127 21
+DS -3 1.9 -3 0.9 0.127 21
+DS 3 1.9 3 0.9 0.127 21
+DP 0 0 0 0 4 0.127 26
+Dl -4.2 -2.15
+Dl 4.2 -2.15
+Dl 4.2 2.15
+Dl -4.2 2.15
+$PAD
+Sh "1" R 1.5 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -3.25 0
+$EndPAD
+$PAD
+Sh "2" R 1.5 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 3.25 0
+$EndPAD
+$EndMODULE 434111025826

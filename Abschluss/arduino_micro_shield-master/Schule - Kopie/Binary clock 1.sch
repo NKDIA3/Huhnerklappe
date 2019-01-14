@@ -1,0 +1,349 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_micro_shield
+LIBS:DS1307
+LIBS:MS1V-T1K_32.768kHz_7pF_+-20ppm
+LIBS:S8411-45R
+LIBS:CR2032MFR_RV
+LIBS:Binary clock 1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DS1307 U2
+U 1 1 5A786A83
+P 6850 3250
+F 0 "U2" H 6550 3480 50  0000 L BNN
+F 1 "DS1307" H 6750 3500 50  0000 L BNN
+F 2 "DS1307:SO08" H 6850 3250 60  0001 C CNN
+F 3 "2.56 USD" H 6850 3250 50  0001 L BNN
+F 4 "DIP-8 Maxim Integrated" H 6850 3250 50  0001 L BNN "Feld4"
+F 5 "IC RTC CLK/CALENDAR I2C 8-DIP" H 6850 3250 50  0001 L BNN "Feld5"
+F 6 "Maxim Integrated" H 6850 3250 50  0001 L BNN "Feld6"
+F 7 "DS1307" H 6850 3250 50  0001 L BNN "Feld7"
+F 8 "Unavailable" H 6850 3250 50  0001 L BNN "Feld8"
+	1    6850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MS1V-T1K_32.768kHz_7pF_+-20ppm Q1
+U 1 1 5A843DE4
+P 6350 3800
+F 0 "Q1" H 7000 4100 50  0000 L CNN
+F 1 "MS1V-T1K_32.768kHz_7pF_+-20ppm" H 5900 3550 50  0000 L CNN
+F 2 "MS1V-T1K_32.768kHz_7pF_+-20ppm:MS1V-T1K32" H 7000 3900 50  0001 L CNN
+F 3 "http://www.microcrystal.com/images/_PDF/2_Crystal_Metal-Package/ms1v-t1k.pdf" H 7000 3800 50  0001 L CNN
+F 4 "Crystal SMD 32.768KHz 2x6mm Crystal 32.768kHz,  /-20ppm, 2-Pin SMD, 6 x 2 x 2mm" H 7000 3700 50  0001 L CNN "Description"
+F 5 "MICRO CRYSTAL" H 7000 3600 50  0001 L CNN "Manufacturer_Name"
+F 6 "MS1V-T1K 32.768kHz 7pF +-20ppm" H 7000 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "RS" H 7000 3400 50  0001 L CNN "Supplier_Name"
+F 8 "6727593P" H 7000 3300 50  0001 L CNN "RS Part Number"
+	1    6350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A8443D9
+P 7650 3200
+F 0 "R1" V 7730 3200 50  0000 C CNN
+F 1 "2K2" V 7650 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7580 3200 50  0001 C CNN
+F 3 "" H 7650 3200 50  0001 C CNN
+	1    7650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A844469
+P 7900 3200
+F 0 "R2" V 7980 3200 50  0000 C CNN
+F 1 "2K2" V 7900 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7830 3200 50  0001 C CNN
+F 3 "" H 7900 3200 50  0001 C CNN
+	1    7900 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 2650
+NoConn ~ 4150 2650
+NoConn ~ 4250 2650
+NoConn ~ 4450 2650
+NoConn ~ 5450 2650
+NoConn ~ 5550 2650
+$Comp
+L CR2032MFR_RV BT1
+U 1 1 5A8569A1
+P 6200 2700
+F 0 "BT1" H 7150 3000 50  0000 L CNN
+F 1 "CR2032MFR_RV" H 7150 2900 50  0000 L CNN
+F 2 "CR2032MFR_RV2:CR2032MFR-RV" H 7150 2800 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/CR2032MFR RV.pdf" H 7150 2700 50  0001 L CNN
+F 4 "Coin Cell Battery 3V 3-PIN VERT 225mAh 20.0 X 3.2mm" H 7150 2600 50  0001 L CNN "Description"
+F 5 "RENATA" H 7150 2500 50  0001 L CNN "Manufacturer_Name"
+F 6 "CR2032MFR RV" H 7150 2400 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "Mouser" H 7150 2300 50  0001 L CNN "Supplier_Name"
+F 8 "614-CR2032RV-MFR-LF" H 7150 2200 50  0001 L CNN "RS Part Number"
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3450 6450 3450
+Wire Wire Line
+	4550 2500 4550 2650
+Wire Wire Line
+	4650 4100 4650 4000
+Wire Wire Line
+	4750 4150 4750 4000
+Wire Wire Line
+	7350 2500 7350 3150
+Wire Wire Line
+	7350 3350 7400 3350
+Wire Wire Line
+	7400 3350 7400 4150
+Wire Wire Line
+	7350 3450 7350 4100
+Wire Wire Line
+	7350 4100 4650 4100
+Wire Wire Line
+	7400 4150 4750 4150
+Wire Wire Line
+	7350 2500 4550 2500
+Wire Wire Line
+	6100 2600 6100 3800
+Wire Wire Line
+	6100 2600 4350 2600
+Wire Wire Line
+	4350 2600 4350 2650
+Connection ~ 7400 3400
+Connection ~ 7350 2950
+Wire Wire Line
+	7400 3400 7650 3400
+Wire Wire Line
+	7650 3400 7650 3350
+Wire Wire Line
+	7650 3050 7650 2950
+Wire Wire Line
+	7350 2950 7900 2950
+Wire Wire Line
+	7900 2950 7900 3050
+Connection ~ 7650 2950
+Wire Wire Line
+	7900 3350 7900 3500
+Wire Wire Line
+	7900 3500 7350 3500
+Connection ~ 7350 3500
+Wire Wire Line
+	6100 3800 6350 3800
+Connection ~ 6100 3450
+Wire Wire Line
+	6350 3900 6350 3150
+Wire Wire Line
+	6350 3150 6450 3150
+Wire Wire Line
+	6200 2800 6100 2800
+Connection ~ 6100 2800
+Wire Wire Line
+	6450 3250 6400 3250
+Wire Wire Line
+	6400 3250 6400 3650
+Wire Wire Line
+	6400 3650 7150 3650
+Wire Wire Line
+	7150 3650 7150 3800
+Wire Wire Line
+	6200 3350 6450 3350
+Wire Wire Line
+	6200 2700 6200 3350
+NoConn ~ 7300 2700
+$Comp
+L ARDUINO_MICRO_SHIELD U1
+U 1 1 5A7865FE
+P 4000 3800
+F 0 "U1" H 5750 4200 60  0000 C CNN
+F 1 "ARDUINO_MICRO_SHIELD" H 4850 4400 60  0000 C CNN
+F 2 "arduino_micro_shield:ARDUINO_MICRO_SHIELD" H 4400 3750 60  0001 C CNN
+F 3 "" H 4400 3750 60  0000 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 3200 0    60   Input ~ 0
+GND
+NoConn ~ 4750 2650
+NoConn ~ 4650 2650
+Text Label 4650 2650 1    60   ~ 0
+NC1
+Text Label 4750 2650 1    60   ~ 0
+NC2
+Wire Wire Line
+	4950 4000 4950 4800
+Wire Wire Line
+	5050 4000 5050 4800
+Wire Wire Line
+	5150 4000 5150 4800
+Wire Wire Line
+	5250 4000 5250 4800
+Wire Wire Line
+	5350 4000 5350 4800
+Wire Wire Line
+	5450 4000 5450 4800
+Wire Wire Line
+	5550 4000 5550 4800
+Wire Wire Line
+	5650 4000 5650 4800
+$Comp
+L GND #PWR01
+U 1 1 5A8610D5
+P 3950 4800
+F 0 "#PWR01" H 3950 4550 50  0001 C CNN
+F 1 "GND" H 3950 4650 50  0000 C CNN
+F 2 "" H 3950 4800 50  0001 C CNN
+F 3 "" H 3950 4800 50  0001 C CNN
+	1    3950 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A8610F7
+P 4550 4000
+F 0 "#PWR02" H 4550 3750 50  0001 C CNN
+F 1 "GND" H 4550 3850 50  0000 C CNN
+F 2 "" H 4550 4000 50  0001 C CNN
+F 3 "" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4000 4850 4800
+$Comp
+L Conn_01x18_Male J1
+U 1 1 5A861DE7
+P 4750 5000
+F 0 "J1" H 4750 5900 50  0000 C CNN
+F 1 "Conn_01x18_Male" H 4750 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x18_Pitch2.54mm" H 4750 5000 50  0001 C CNN
+F 3 "" H 4750 5000 50  0001 C CNN
+	1    4750 5000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4050 4000
+NoConn ~ 4150 4000
+NoConn ~ 4350 4000
+NoConn ~ 4450 4000
+Wire Wire Line
+	4250 4000 4250 4200
+Wire Wire Line
+	4250 4200 4750 4200
+Wire Wire Line
+	4750 4200 4750 4800
+Wire Wire Line
+	4850 2650 4850 2450
+Wire Wire Line
+	4850 2450 3950 2450
+Wire Wire Line
+	3950 2450 3950 4250
+Wire Wire Line
+	3950 4250 4650 4250
+Wire Wire Line
+	4650 4250 4650 4800
+Wire Wire Line
+	4950 2650 4950 2400
+Wire Wire Line
+	4950 2400 3900 2400
+Wire Wire Line
+	3900 2400 3900 4300
+Wire Wire Line
+	3900 4300 4550 4300
+Wire Wire Line
+	4550 4300 4550 4800
+Wire Wire Line
+	5050 2650 5050 2350
+Wire Wire Line
+	5050 2350 3850 2350
+Wire Wire Line
+	3850 2350 3850 4350
+Wire Wire Line
+	3850 4350 4450 4350
+Wire Wire Line
+	4450 4350 4450 4800
+Wire Wire Line
+	5150 2650 5150 2300
+Wire Wire Line
+	5150 2300 3800 2300
+Wire Wire Line
+	3800 2300 3800 4400
+Wire Wire Line
+	3800 4400 4350 4400
+Wire Wire Line
+	4350 4400 4350 4800
+Wire Wire Line
+	5250 2650 5250 2250
+Wire Wire Line
+	5250 2250 3750 2250
+Wire Wire Line
+	3750 2250 3750 4450
+Wire Wire Line
+	3750 4450 4250 4450
+Wire Wire Line
+	4250 4450 4250 4800
+Wire Wire Line
+	5350 2650 5350 2200
+Wire Wire Line
+	5350 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 4500
+Wire Wire Line
+	3700 4500 4150 4500
+Wire Wire Line
+	4150 4500 4150 4800
+Wire Wire Line
+	5650 2650 5650 2150
+Wire Wire Line
+	5650 2150 3650 2150
+Wire Wire Line
+	3650 2150 3650 4550
+Wire Wire Line
+	3650 4550 4050 4550
+Wire Wire Line
+	4050 4550 4050 4800
+$EndSCHEMATC

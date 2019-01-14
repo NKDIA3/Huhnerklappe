@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 434111025826
+#
+DEF 434111025826 S 0 40 Y N 1 L N
+F0 "S" -150 140 50 H V L BNN
+F1 "434111025826" -200 -120 50 H V L BNN
+F2 "434111025826" 0 0 50 H I L BNN
+F3 "Wurth Electronics" 0 0 50 H I L BNN
+F4 "None" 0 0 50 H I L BNN
+F5 "None" 0 0 50 H I L BNN
+F6 "434111025826" 0 0 50 H I L BNN
+F7 "Pushbutton 12 Vdc 0.05 A 1 x Off/_On_ Wuerth Elektronik 434111025826 momentary 1 pc_s_" 0 0 50 H I L BNN
+F8 "Unavailable" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -200 0 -100 0 N
+P 2 0 0 10 200 0 100 0 N
+C 80 0 20 0 0 10 N
+C -80 0 20 0 0 10 N
+P 2 0 0 10 -80 20 80 40 N
+X 1 1 -300 0 100 R 40 40 0 0 P 
+X 2 2 300 0 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MS1V-T1K_32.768kHz_7pF_+-20ppm
+D Crystal SMD 32.768KHz 2x6mm Crystal 32.768kHz,  /-20ppm, 2-Pin SMD, 6 x 2 x 2mm
+K
+F http://www.microcrystal.com/images/_PDF/2_Crystal_Metal-Package/ms1v-t1k.pdf
+$ENDCMP
+#
+#End Doc Library
