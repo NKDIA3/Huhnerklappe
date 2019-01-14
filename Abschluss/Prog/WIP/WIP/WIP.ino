@@ -15,16 +15,13 @@
 #include <Wire.h>                                                 //I2C Bus Lib
 #include "RTClib.h"                                               //RTC Lib
 RTC_DS1307 rtc;
-
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; //Variable für Anzeige des Wochentags
-
 int sensorValue = 0;                                              //Sensor Wert (Standard =)
 int State = 0;
 #define M1 D5                                                      //Motorsteuerung Pin 1
 #define M2 D6                                                      //Motorsteuerung Pin 2
 #define LDR A0                                                     //Fotottransistor am ADC (Pin A0)
 #define T1 D7                                                      //Taster an GPIO13
-
 void setup() {                                                    //Code läuft am Start einmal durch
   pinMode(M1, OUTPUT);                                            //M1,M2 als Ausgang
   pinMode(M2, OUTPUT);
@@ -45,7 +42,7 @@ void setup() {                                                    //Code läuft 
   }
              
   if ( digitalRead(T1) == HIGH ){                                              //Wenn offen runter fahren bis geschlossen 
-    Serial.println("Tür offen --> kalibrierung");
+    Serial.println("Tür offen --> Kalibrierung");
     while( digitalRead(T1) == HIGH ){
       runter();
       delay(100);
@@ -77,7 +74,7 @@ void setup() {                                                    //Code läuft 
 void loop() {
   DateTime now = rtc.now();
   int std = now.hour();
-  sensorValue = analogRead(A0);                                   //Einlesen des ADC 0....1024
+  sensorValue = analogRead(LDR);                                   //Einlesen des ADC 0....1024
  
   if((State == 0 )&& (sensorValue >= 101) && (std >= 5 ) && (std <= 18 )) {  
     hoch();
@@ -87,7 +84,7 @@ void loop() {
     State=1;
   }
 
-  if((State == 1 )&& (sensorValue <= 101) && (std <= 4 ) && (std >= 19 )) {  
+  if((State == 1 )&& (sensorValue <= 100) && (std <= 4 ) && (std >= 19 )) {  
     while( digitalRead(T1) == HIGH ){
       runter();
       delay(100);
@@ -99,8 +96,8 @@ void loop() {
   }
 }
 
-void hoch(){                                                    //Unterprogramm runter 
-  digitalWrite(M1, HIGH);                                         //Beschaltung siehe Datasheet LS293DD
+void hoch(){                                                     //Unterprogramm runter 
+  digitalWrite(M1, HIGH);                                        //Beschaltung siehe Datasheet LS293DD
   digitalWrite(M2, LOW);
 }
 
