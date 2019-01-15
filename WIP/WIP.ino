@@ -10,11 +10,11 @@ RTC_DS1307 rtc;
 
 char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; //Variable für Anzeige des Wochentags
 
-int sensorValue = 0;                                              //Sensor Wert (Standard =)
-int State = 0;                                                    //Status der Klapppe
+int sensorValue = 0;                                              //Sensor Wert (Standard = 0)
+int State = 0;                                                    //Status der Klappe
 #define M1 D5                                                     //Motorsteuerung Pin 1
 #define M2 D6                                                     //Motorsteuerung Pin 2
-#define LDR A0                                                    //Fotottransistor am ADC (Pin A0)
+#define LDR A0                                                    //Fototransistor am ADC (Pin A0)
 #define T1 D7                                                     //Taster an GPIO13
 
 void setup() {                                                    //Code läuft am Start einmal durch
@@ -23,7 +23,7 @@ void setup() {                                                    //Code läuft 
   pinMode(LDR, INPUT);                                            //LDR als Eingang
   pinMode(T1, INPUT_PULLUP);                                      //Taster als Eingang mit Pullup
 
-  Serial.begin(115200);                                           //Serielle Komunikation aktivieren Baudt 115200
+  Serial.begin(115200);                                           //Serielle Kommunikation aktivieren Baud 115200
 
   if (! rtc.begin()) {                                            //Für Debugging
     Serial.println("Verbindung zur RTC fehlgeschlagen");          //Wenn rtc.begin aus lib nicht erfolgreich ausgeführt wurde (--> keine Verbindung zur RTC) 
@@ -31,13 +31,13 @@ void setup() {                                                    //Code läuft 
   }
   
   if (! rtc.isrunning()) {                                        //Für Debugging
-    Serial.println("Zeit nich enthalten");                        
+    Serial.println("Zeit nicht enthalten");                        
     Serial.println("Setze Zeit...");                              
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));               //Falls keine Zeit in der RTC gesetz war wird die Zeit des Kompilierens gesetzt
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));               //Falls keine Zeit in der RTC gesetz war, wird die Zeit des Kompilierens gesetzt
   }
              
-  if ( digitalRead(T1) == HIGH ){                                              //Wenn offen runter fahren bis geschlossen 
-    Serial.println("Tür offen --> kalibrierung");
+  if ( digitalRead(T1) == HIGH ){                                              //Wenn offen, runter fahren bis geschlossen 
+    Serial.println("Tür offen --> Kalibrierung");
     while( digitalRead(T1) == HIGH ){
       runter();
       delay(100);
@@ -69,7 +69,7 @@ void setup() {                                                    //Code läuft 
 void loop() {
   DateTime now = rtc.now();
   int std = now.hour();                                                        //aktuelle Stunde einlesen
-  sensorValue = analogRead(A0);                                                //Einlesen des ADC 0....1024
+  sensorValue = analogRead(LDR);                                                //Einlesen des ADC 0....1024
  
   if((State == 0 )&& (sensorValue >= 101) && (std >= 5 ) && (std <= 18 )) {   // Wenn die Tür unten,hell,zwischen 5 und 18 Uhr --> Tür hochfahren
     hoch();
