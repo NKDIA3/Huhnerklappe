@@ -62,24 +62,23 @@ void setup() {                                                    //Code läuft 
     Serial.print(':');
     Serial.print(now.second(), DEC);
     Serial.println();
-    
-  }  
+   
+  } 
 }
 
 void loop() {
   DateTime now = rtc.now();
   int std = now.hour();                                                        //aktuelle Stunde einlesen
   sensorValue = analogRead(LDR);                                                //Einlesen des ADC 0....1024
- 
   if((State == 0 )&& (sensorValue >= 101) && (std >= 5 ) && (std <= 18 )) {   // Wenn die Tür unten,hell,zwischen 5 und 18 Uhr --> Tür hochfahren
     hoch();
-    delay(5000);
+    delay(3800);
     aus();
     Serial.println("oben");
     State=1;
   }
 
-  if((State == 1 )&& (sensorValue <= 101) && (std <= 4 ) && (std >= 19 )) {  // Wenn die Tür oben,dunkel,vor 5 und nach 18 Uhr --> Tür runterfahren
+  if((State == 1 )&& (sensorValue <= 101) && (std <= 4  || std >= 19 )) {  // Wenn die Tür oben,dunkel,vor 5 und nach 18 Uhr --> Tür runterfahren    
     while( digitalRead(T1) == HIGH ){
       runter();
       delay(100);
